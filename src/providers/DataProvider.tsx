@@ -23,7 +23,7 @@ export const DataProvider = ({ children }: { children: React.ReactNode }) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://openlibrary.org/search.json?title=${searchTerm}&page=${page}&limit=${limit}`
+        `https://openlibrary.org/search.json?title=${searchTerm}&page=${page}&limit=${limit}`
       );
       const data = await response.json();
       const { docs } = data;

@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const URL = import.meta.env.VITE_API_URL;
-console.log("URL", URL);
 export const axiosInstance = axios.create({
   // https://nua-backend-skqc.onrender.com/
 
