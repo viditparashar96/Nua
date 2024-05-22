@@ -99,7 +99,7 @@ const Filter = () => {
       <div>
         <Label>Books per Page</Label>
         <Select
-          value={Number(limit)}
+          value={limit}
           onValueChange={(value) => {
             setSearchParam((prev: any) => {
               const newParams = new URLSearchParams(prev);
@@ -115,9 +115,9 @@ const Filter = () => {
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Number</SelectLabel>
-              <SelectItem value={10}>10</SelectItem>
-              <SelectItem value={50}>50</SelectItem>
-              <SelectItem value={100}>100</SelectItem>
+              <SelectItem value="10">10</SelectItem>
+              <SelectItem value="50">50</SelectItem>
+              <SelectItem value="100">100</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>
