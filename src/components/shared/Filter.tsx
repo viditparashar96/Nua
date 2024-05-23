@@ -73,7 +73,11 @@ const Filter = () => {
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       setSearchTerm(localSearchTerm);
-      setSearchParam({ page: "1" });
+      setSearchParam((prev:any)=>{
+        const newParams = new URLSearchParams(prev);
+        newParams.set("page", "1");
+        return newParams;
+      })
 
       // fecthBooks();
     }, 800);

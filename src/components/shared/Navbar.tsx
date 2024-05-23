@@ -24,7 +24,7 @@ const Navbar = () => {
     }
   };
   return (
-    <header className="sticky top-0 flex h-16 items-center justify-end gap-4 border-b bg-background px-4 md:px-6">
+    <header className="sticky top-0 z-50 flex h-16 items-center justify-end gap-4 border-b bg-background px-4 md:px-6">
       <p>
         Welcome <span className=" font-bold"> {userData?.name} </span>
       </p>
